@@ -72,6 +72,7 @@ require("packer").startup(function(use)
 
   -- Theming
   use({ "catppuccin/nvim", as = "catppuccin" })
+  use({ "rebelot/kanagawa.nvim" })
 
   -- Breadcrumb (top and bottom)
   use({
