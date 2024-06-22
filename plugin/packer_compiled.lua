@@ -206,12 +206,6 @@ _G.packer_plugins = {
     path = "/Users/khalifa/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  ["obsidian.nvim"] = {
-    config = { "\27LJ\2\n◊\2\0\0\6\0\n\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\3\0005\4\6\0005\5\a\0=\5\b\4>\4\1\3=\3\t\2B\0\2\1K\0\1\0\15workspaces\14overrides\1\0\1\17notes_subdir\15notes üìù\1\0\3\tname\farrakis\tpathR/Users/khalifa/Library/Mobile Documents/com~apple~CloudDocs/Documents/arrakis\14overrides\0\14templates\1\0\2\15workspaces\0\14templates\0\1\0\3\16date_format\r%Y-%m-%d\vfolder\14templates\16time_format\n%H:%M\nsetup\robsidian\frequire\0" },
-    loaded = true,
-    path = "/Users/khalifa/.local/share/nvim/site/pack/packer/start/obsidian.nvim",
-    url = "https://github.com/epwalsh/obsidian.nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/khalifa/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -314,10 +308,6 @@ time([[Config for todo-comments.nvim]], false)
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
--- Config for: obsidian.nvim
-time([[Config for obsidian.nvim]], true)
-try_loadstring("\27LJ\2\n◊\2\0\0\6\0\n\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\3\0005\4\6\0005\5\a\0=\5\b\4>\4\1\3=\3\t\2B\0\2\1K\0\1\0\15workspaces\14overrides\1\0\1\17notes_subdir\15notes üìù\1\0\3\tname\farrakis\tpathR/Users/khalifa/Library/Mobile Documents/com~apple~CloudDocs/Documents/arrakis\14overrides\0\14templates\1\0\2\15workspaces\0\14templates\0\1\0\3\16date_format\r%Y-%m-%d\vfolder\14templates\16time_format\n%H:%M\nsetup\robsidian\frequire\0", "config", "obsidian.nvim")
-time([[Config for obsidian.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

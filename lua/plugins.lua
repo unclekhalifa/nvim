@@ -132,31 +132,4 @@ require("packer").startup(function(use)
     end,
   })
 
-  -- Obsidian plugin
-  use({
-  "epwalsh/obsidian.nvim",
-  tag = "*",  -- recommended, use latest release instead of latest commit
-  requires = {
-    -- Required.
-    "nvim-lua/plenary.nvim",
-  },
-  config = function()
-    require("obsidian").setup({
-      templates = {
-          folder = "templates",
-          date_format = "%Y-%m-%d",
-          time_format = "%H:%M",
-        },
-      workspaces = {
-        {
-          name = "arrakis",
-          path = "/Users/khalifa/Library/Mobile Documents/com~apple~CloudDocs/Documents/arrakis",
-            overrides = {
-              notes_subdir = "notes 📝"
-            }
-        },
-      },
-    })
-  end,
-})
 end)
