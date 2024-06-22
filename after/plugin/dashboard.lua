@@ -9,7 +9,8 @@ db.setup({
     week_header = {
       enable = true,
     },
-    project = { enable = true, limit = 8, label = 'Projects', action = 'Telescope find_files cwd=' },
+    mru = { limit = 3 },
+    project = { enable = true, limit = 3, label = 'Projects', action = 'Telescope find_files cwd=' },
     shortcut = {
       { desc = '󰊳 Update', group = '@property', action = 'PackerSync', key = 'u' },
       {
