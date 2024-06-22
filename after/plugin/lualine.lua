@@ -6,7 +6,7 @@ end
 
 lualine.setup {
   options = {
-    theme = 'catppuccin'
+    theme = 'auto'
   },
   tabline = {
     lualine_a = {'buffers'},
