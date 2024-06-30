@@ -33,14 +33,14 @@ local options = {
 
   list = true,
 
-  -- listchars = {
-  --   tab = "» ", -- Tab character
-  --   extends = "›", -- Character to show in the last column when the line extends
-  --   precedes = "‹", -- Character to show in the first column when the line precedes
-  --   trail = "·", -- Trail character to show for lines that extend beyond the screen
-  --   nbsp = "␣", -- Character to show for non-breaking spaces
-  --   space = "·" -- Character to show for spaces
-  -- }
+  listchars = {
+    tab = "- ", -- Tab character
+    extends = "›", -- Character to show in the last column when the line extends
+    precedes = "‹", -- Character to show in the first column when the line precedes
+    trail = "·", -- Trail character to show for lines that extend beyond the screen
+    nbsp = "␣", -- Character to show for non-breaking spaces
+    space = "·" -- Character to show for spaces
+  }
 
 
 }
