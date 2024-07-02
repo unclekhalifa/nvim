@@ -143,4 +143,6 @@ require("packer").startup(function(use)
 
   use({ "bluz71/vim-moonfly-colors" })
 
+  use({ "lukas-reineke/indent-blankline.nvim" })
+
 end)
