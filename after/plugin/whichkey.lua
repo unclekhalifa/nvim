@@ -46,8 +46,7 @@ local keymaps = {
 
   g = {
     name = "Git",
-    d = { "<CMD>DiffviewOpen<CR>", "open diffview" },
-    D = { "<CMD>DiffviewClose<CR>", "close diffview" },
+    d = { "<CMD>lua ToggleDiffView()<CR>", "open diffview" },
     l = { "<CMD>DiffviewLog<CR>", "log" },
     h = { "<CMD>DiffviewFileHistory<CR>", "file history" },
     f = { "<CMD>DiffviewFileHistory %<CR>", "current file history" },
@@ -69,7 +68,26 @@ local keymaps = {
     S = { "<Cmd>PackerStatus<CR>", "status" },
     u = { "<Cmd>PackerUpdate<CR>", "update" },
   },
+
+  t = {
+    name = "File Tree",
+    t = { "<Cmd>NvimTreeToggle<CR>", "toggle" }
+  }
 }
 
 whichkey.setup(conf)
 whichkey.register(keymaps, options)
+
+
+-- == Helper functions == --
+
+function ToggleDiffView()
+	print("ToggleDiffView executed")
+	if next(require("diffview.lib").views) == nil then
+		-- Open diff view if it's not open
+		vim.cmd("DiffviewOpen")
+	else
+		-- Close diff view if it's already open
+		vim.cmd("DiffviewClose")
+	end
+end
