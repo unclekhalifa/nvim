@@ -4,7 +4,7 @@ if not status_ok then
   return
 end
 
-lualine.setup {
+lualine.setup({
   options = {
     theme = 'auto'
   },
@@ -16,4 +16,4 @@ lualine.setup {
     lualine_y = {'windows'},
     lualine_z = {'tabs'}
   }
-}
+})
