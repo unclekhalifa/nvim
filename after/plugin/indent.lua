@@ -27,7 +27,11 @@ hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
 end)
 
 indent.setup({
-  -- indent = { highlight = highlight },
+  indent = {
+    char = "·",
+    tab_char = "·",
+    -- highlight = highlight
+  },
   exclude = {
     buftypes = { "terminal" },
     filetypes = { "dashboard" },
