@@ -41,7 +41,8 @@ local keymaps = {
     p = { "<Cmd>Telescope project<CR>", "project" },
     r = { "<Cmd>Telescope repo list<CR>", "repo" },
     e = { "<Cmd>Telescope env<CR>", "env" },
-    c = { "<Cmd>Telescope colorscheme<CR>", "colorscheme" }
+    c = { "<Cmd>Telescope colorscheme<CR>", "colorscheme" },
+    h = { "<Cmd>Telescope find_files find_command=rg,--ignore,--hidden,--files,-u<CR>", "hidden" }
   },
 
   g = {

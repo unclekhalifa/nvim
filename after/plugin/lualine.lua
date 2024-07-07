@@ -6,11 +6,16 @@ end
 
 lualine.setup({
   options = {
-    theme = 'auto'
+    theme = 'auto',
+    disabled_filetypes = {
+      winbar = {}
+    }
   },
   tabline = {
     lualine_a = {'buffers'},
-    lualine_b = {},
+    lualine_b = {
+      'datetime',
+    },
     lualine_c = {},
     lualine_x = {},
     lualine_y = {'windows'},
