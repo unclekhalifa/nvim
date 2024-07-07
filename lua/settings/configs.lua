@@ -31,6 +31,8 @@ local options = {
 
   timeoutlen = 250,          -- Time in milliseconds to wait for a mapped sequence to complete
 
+  fillchars = { eob = " " },
+
   list = true,
 
   listchars = {
