@@ -145,4 +145,6 @@ require("packer").startup(function(use)
 
   use({ "lukas-reineke/indent-blankline.nvim" })
 
+  use({ "supermaven-inc/supermaven-nvim" })
+
 end)
