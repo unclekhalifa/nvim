@@ -3,13 +3,6 @@ if not status_ok then
   return
 end
 
-local conf = {
-  window = {
-    border = "shadow", -- none, single, double, shadow
-    position = "top",  -- bottom, top
-  }
-}
-
 local options = {
   mode = "n",     -- Normal mode
   prefix = "<leader>",
@@ -60,7 +53,7 @@ local keymaps = {
   { "<leader>c",  "<CMD>lua BufferDelete()<CR>",                                                desc = "Close",                nowait = false, remap = false },
 }
 
-whichkey.setup(conf)
+whichkey.setup()
 whichkey.add(keymaps, options)
 
 

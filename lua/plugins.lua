@@ -132,19 +132,10 @@ require("packer").startup(function(use)
     end,
   })
 
-  use({
-    'nvim-tree/nvim-tree.lua',
-    requires = {
-      'nvim-tree/nvim-web-devicons', -- optional
-    },
-  })
-
   use({ "scottmckendry/cyberdream.nvim" })
 
   use({ "bluz71/vim-moonfly-colors" })
 
   use({ "lukas-reineke/indent-blankline.nvim" })
-
-  use({ "supermaven-inc/supermaven-nvim" })
 
 end)
