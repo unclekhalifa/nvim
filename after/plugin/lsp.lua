@@ -20,7 +20,7 @@ if not mason_lsp_ok then
   print("mason lsp config not found!")
 end
 
-local language_servers = { "gopls", "graphql", "bashls", "cssls", "html", "jsonls", "quick_lint_js", "pyright", "lua_ls", "tsserver" }
+local language_servers = { "gopls", "graphql", "bashls", "cssls", "html", "jsonls", "quick_lint_js", "pyright", "lua_ls", "ts_ls" }
 
 mason_lsp.setup({
   ensure_installed = language_servers,
@@ -66,7 +66,7 @@ for _, server in pairs(language_servers) do
         },
       },
     }
-  elseif server == "tsserver" then
+  elseif server == "ts_ls" then
     configs.root_dir = lsp.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json")
   elseif server == "eslint" then
     configs.root_dir = lsp.util.root_pattern(
